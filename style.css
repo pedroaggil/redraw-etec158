@@ -1,0 +1,112 @@
+/* 
+    Folha de estilização geral do projeto de redesenho "Etec de Itanhaém"
+
+    O projeto pode ser acessado a partir do GitHub:
+        * < github.com/pedroaggil/redraw-etec158/ >
+
+    Projeto desenvolvido em parceria entre Denise Azure e Pedro Gil.
+
+    Fontes utilizadas: 
+        * Títulos: Merriweather (R400)
+        * Subtítulos: PT Serif (R400)
+        * Parágrafos: Roboto Slab (L300)
+
+    Cores utilizadas:
+        * Cor de fundo: branco levemente acizentado
+        * Cor principal: verde musgo
+        * Cor secundária: vermelho borgonha
+        * Cor de destaque: azul turquesa
+        * Cores neutras: cinzas claro e escuro;
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family= Merriweather&family=PT+Serif&family=Roboto+Slab:wght@300&display=swap');
+
+:root { /* Define variables */
+
+    /* Colors */
+        /* Hexadecimal colors */
+            --bg-color: #F8F8F8;
+            --primary-color: #1A6D12;
+            --secondary-color: #B20000;
+            --contrast-color: #00C1CF;
+            --dark-neutral-color: #666666;
+            --light-neutral-color: #DADADA;
+
+        /* RGB colors */
+            --rgb-bg-color: rgb(248, 248, 248);
+            --rgb-primary-color: rgb(26, 109, 18);
+            --rgb-secondary-color: rgb(178, 0, 0);
+            --rgb-contrast-color: rgb(0, 193, 207);
+            --rgb-dark-neutral-color: rgb(102, 102, 102);
+            --rgb-light-neutral-color: rgb(218, 218, 218);
+
+    /* Font family */
+        --title-font: 'Merriweather';
+        --subtitle-font: 'PT Serif';
+        --paragraph-font: 'Roboto Slab';
+}
+
+/* Scrollbar */
+    body::-webkit-scrollbar { width: 12px; }
+
+    body::-webkit-scrollbar-track { background: var(--light-neutral-color); }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: var(--dark-neutral-color);
+        border-radius: 10px;
+        border: 2px solid var(--primary-color);
+    }
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--paragraph-font), 'sans-serif';
+    font-size: large;
+    overflow-x: hidden;
+}
+
+span.hello { color: black; font-weight: bold; }
+
+nav {
+    background-color: var(--primary-color);
+    font-weight: bold;
+    color: var(--dark-neutral-color);
+}
+
+figure {
+    width: 100vw;
+    margin-top: 2vh; margin-bottom: 2vh;
+    align-items: center;
+    position: relative;
+}
+
+figure img { transform: translateX(40%); }
+
+section {
+    display: inline-block;
+
+    /* Standard configuration */
+        font-size: larger;
+        background-color: var(--primary-color);
+        width: 100vw;
+
+    /* Responsive box shadow */
+        -webkit-box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.65);
+        -moz-box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.65);
+        box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.65);
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li { 
+    display: inline-block;
+    margin-right: 1vw; margin-top: 1vh; margin-bottom: -2vh;
+}
+
+section .info img {
+    width: 25px; height: 25px;
+}
+
+#nsa { float: right; }
