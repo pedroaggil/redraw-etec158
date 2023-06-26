@@ -66,6 +66,15 @@ body {
 
 #logo__header { width: 200px; height: 70px; margin-right: -40px; }
 
+a, a:link, a:visited { 
+    text-decoration: none;
+    color: var(--contrast-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
 section ul li:nth-child(1) { margin-left: 4%; }
 
 span.hello { color: black; font-weight: bold; }
