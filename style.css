@@ -70,10 +70,13 @@ a, a:link, a:visited {
     text-decoration: none;
     color: var(--contrast-color);
 }
+a:hover { color: var(--secondary-color); }
 
-a:hover {
-    color: var(--secondary-color);
+section a, section a:link, section a:visited { 
+    text-decoration: none;
+    color: var(--dark-neutral-color) !important;
 }
+section a:hover { color: var(--dark-neutral-color) !important; }
 
 section ul li:nth-child(1) { margin-left: 4%; }
 

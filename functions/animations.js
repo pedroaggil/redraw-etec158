@@ -7,27 +7,36 @@
     Projeto desenvolvido em parceria entre Denise Azure e Pedro Gil.
  */
 
-    document.getElementsByClassName("hello").addEventListener("onload", function Greetings() {
+    document.getElementsByClassName("hello").addEventListener("load", function Greetings() {
         // Local function to get hours for greet users.
 
         function getHours() {
             var hours = new Date().getHours();
 
             if (hours >= 5 && hours < 12) {
-                document.getElementById("span.hello").innerHTML = 'Bom dia!';
+                document.getElementsByClassName("hello").innerHTML = 'Bom dia!';
 
             } else if (hours >= 12 && hours < 18) {
-                document.getElementById("span.hello").innerHTML = 'Boa tarde!';
+                document.getElementsByClassName("hello").innerHTML = 'Boa tarde!';
 
             } else if (hours >= 18 && hours < 24) {
-                document.getElementById("span.hello").innerHTML = 'Boa noite!';
+                document.getElementsByClassName("hello").innerHTML = 'Boa noite!';
 
             } else if (hours >= 0 && hours < 5) {
-                document.getElementById("span.hello").innerHTML = 'Boa madrugada!';
+                document.getElementsByClassName("hello").innerHTML = 'Boa madrugada!';
 
             } else {
-                document.getElementById("span.hello").innerHTML = 'Olá!';
+                document.getElementsByClassName("hello").innerHTML = 'Olá!';
 
             }
+        }
+    });
+
+    // Local function to padronize a height of articles
+    document.getElementsByTagName("article").addEventListener('load', function PadronizeArticles() {
+        if (parseInt(this.style.height) >= 15) {
+            alert("orra grandão esse artigo aí hein");
+        } else {
+            alert("poxa isso ai nao da nem pro cheiro");
         }
     });
