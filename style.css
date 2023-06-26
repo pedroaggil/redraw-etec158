@@ -64,6 +64,10 @@ body {
     overflow-x: hidden;
 }
 
+#logo__header { width: 200px; height: 70px; margin-right: -40px; }
+
+section ul li:nth-child(1) { margin-left: 4%; }
+
 span.hello { color: black; font-weight: bold; }
 
 nav {
