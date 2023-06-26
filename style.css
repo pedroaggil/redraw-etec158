@@ -110,3 +110,57 @@ section .info img {
 }
 
 #nsa { float: right; }
+
+article {
+    width: 70vw; max-width: 90vw; min-width: 50vw;
+    margin-top: 2vh; margin-bottom: 2vh;
+    position: relative;
+
+    align-items: center;
+    transform: translateX(20%);
+
+    height: auto;
+    padding: 2%;
+
+    /* Border */
+        border-radius: 20px;
+        border: var(--secondary-color) solid 2px;
+
+    text-align: justify;
+}
+
+.icon { width: 30px; height: 30px; }
+.post { transform: translateX(50%); }
+
+article .row { transform: translateX(5%); }
+
+article .jornalism, article .speech { transform: translateX(10%); }
+article .speech { font-style: italic; }
+
+article .title {
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: var(--title-font);
+    color: var(--secondary-color);
+}
+
+article .subtitle {
+    font-size: 1.2em;
+    font-style: italic;
+    font-family: var(--subtitle-font);
+    color: var(--dark-neutral-color);
+
+    margin-bottom: 2vh;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--light-neutral-color);
+    height: auto; width: 100vw;
+
+}
+
+footer #copyright {
+    padding-top: 1%;
+    color: var(--light-neutral-color);
+}
