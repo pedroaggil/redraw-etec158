@@ -178,7 +178,7 @@
 
     .card {
         width: 20vw;
-        margin: 3%;
+        margin: 5%;
     }
 
     .card-cover {
@@ -210,11 +210,7 @@
         opacity: 1;
     }
 
-    .diurnal, .nocturnal {
-        position: relative;
-        margin: 2vh;
-        display: inline-block;
-    }
+    .diurnal, .nocturnal { display: inline-block; margin-top: -50px; }
 
     .diurnal { margin-right: 5vw; }
     .nocturnal { margin-left: 5vw; }
